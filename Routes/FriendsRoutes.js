@@ -9,7 +9,8 @@ import {
   viewSentRequests,
   removeFriend,
 } from "../Controller/FriendsController.js";
-import authMiddleware from "../middlewares/authMiddleware.js";
+// import authMiddleware from "../middlewares/authMiddleware.js";
+import authMiddleware from "../Middlewares/authMiddleware.js";
 
 const router = express.Router();
 
