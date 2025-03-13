@@ -17,7 +17,7 @@ const app = express();
 const port = 3000;
 
 const corsOptions = {
-  origin: "http://localhost:5173",
+  origin: "https://frontend-ghack-xggv.vercel.app/",
   credentials: true, // Allow cookies and credentials
 };
 
@@ -49,7 +49,7 @@ const server = app.listen(port, () => {
 // Attach Socket.io to the existing Express server
 const io = new Server(server, {
   cors: {
-    origin: "http://localhost:5173",
+    origin: "https://frontend-ghack-xggv.vercel.app/",
     methods: ["GET", "POST"]
   }
 });
